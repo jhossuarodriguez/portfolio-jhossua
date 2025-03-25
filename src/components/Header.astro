@@ -1,0 +1,64 @@
+---
+import DarkMode from "../assets/icons/sun.svg";
+---
+
+<header class="fixed top-0 flex justify-center py-5 w-full mx-auto">
+    <nav
+        class="flex justify-center items-center py-2 px-10 border border-[#1e2a47] h-full rounded-full bg-[#334054] text-primary"
+    >
+        <ul class="flex justify-center gap-x-5 items-center">
+            <li>
+                <a
+                    class="hover:text-blue-400 transform duration-200"
+                    href="#projects"
+                    id="projects">Projects</a
+                >
+            </li>
+            <li>
+                <a
+                    class="hover:text-blue-400 transform duration-200"
+                    href="#about"
+                    id="about">About</a
+                >
+            </li>
+            <li>
+                <a
+                    class="hover:text-blue-400 transform duration-200"
+                    href="#contact"
+                    id="contacto">Contacto</a
+                >
+            </li>
+            <li>
+                <button
+                    type="button"
+                    class="flex justify-center items-center cursor-pointer"
+                    id="theme-toggle-btn"
+                >
+                    <DarkMode
+                        class="flex justify-center items-center size-5 text-white hover:text-blue-400 transform duration-100"
+                    />
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    nav {
+        background: transparent;
+        animation: header-blur-scroll 0.3s linear both;
+        animation-timeline: scroll();
+        animation-range: 0 200px;
+    }
+
+    @keyframes header-blur-scroll {
+        0% {
+            backdrop-filter: blur(0px);
+            background: transparent;
+        }
+
+        100% {
+            backdrop-filter: blur(10px);
+        }
+    }
+</style>
