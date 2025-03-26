@@ -1,0 +1,22 @@
+---
+import DevIcon from "../assets/icons/dev.svg";
+import { Image } from "astro:assets";
+import Proyect1 from "../assets/images/proyect1.webp";
+---
+
+<section class="flex flex-col w-full mt-44 h-screen">
+    <div class="flex flex-row gap-3">
+        <DevIcon class="size-10 text-primary" />
+        <h1 class="text-3xl text-primary font-bold">Proyectos</h1>
+    </div>
+
+    <div class="flex flex-row gap-3 mt-10 ">
+        <Image
+        class="w-[450px] rounded-lg shadow-2xl hover:scale-110 transition-transform duration-700"
+        src={Proyect1}
+        alt="Proyecto Lorar Studio - Pagina de arquitectura hecha con Astro, tailwind y javascript"
+        fetchpriority={"high"}
+        loading={"lazy"} />
+    </div>
+</section>
+
