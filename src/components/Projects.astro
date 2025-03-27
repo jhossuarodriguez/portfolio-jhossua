@@ -4,9 +4,11 @@ import { Image } from "astro:assets";
 import Proyect1 from "../assets/images/proyect1.webp";
 import AstroLogo from "../assets/icons/astro.svg";
 import TailwindLogo from "../assets/icons/tailwind.svg";
+import GitHub from "../assets/icons/github.svg";
+import PreviewLogo from "../assets/icons/preview.svg";
 ---
 
-<section class="flex flex-col w-full mt-44 min-h-full">
+<section class="flex flex-col w-full mt-44 py-5 min-h-full" id="projects">
     <div class="flex flex-row gap-3">
         <DevIcon class="size-10 text-primary" />
         <h1 class="text-3xl text-primary font-bold">Proyectos</h1>
@@ -40,12 +42,28 @@ import TailwindLogo from "../assets/icons/tailwind.svg";
                 >
             </div>
             <div class="flex flex-col mt-7">
-                <p class="text-primary text-base">
+                <p class="text-primary text-base leading-[1.6]">
                     Lorar Studio es un sitio web de arquitectura desarrollado
                     con Astro, Tailwind CSS y JavaScript, diseñado para ofrecer
                     una experiencia rápida, optimizada y visualmente atractiva a
                     sus clientes para brindar el mejor servicio.
                 </p>
+            </div>
+            <div class="flex flex-row mt-5 gap-5">
+                <a
+                    class="py-2 px-2 flex flex-row justify-center items-center gap-1 border border-primary rounded-xl hover:text-primary hover:bg-secondary transition duration-300"
+                    href="https://github.com/jhossuarodriguez/lorar-website"
+                    rel="nooperer noreferer"
+                >
+                    GitHub<GitHub class="size-6 text-primary" />
+                </a>
+                <a
+                    class="py-2 px-2 flex flex-row justify-center items-center gap-2 border border-primary rounded-xl hover:text-primary hover:bg-secondary transition duration-300"
+                    rel="nooperer noreferer"
+                    href=" "
+                >
+                    Test<PreviewLogo class="size-6 text-primary" />
+                </a>
             </div>
         </div>
     </div>

@@ -1,10 +1,25 @@
 ---
 import ProfileIcon from "../assets/icons/profile.svg";
+import { Image } from "astro:assets";
+import ProfilePicture from "../assets/images/profile-picture.webp";
 ---
 
-<section class="flex flex-col mt-44 w-full h-screen">
+<section class="flex flex-col mt-44 w-full min-h-screen">
     <div class="flex flex-row gap-3">
-        <ProfileIcon class="size-10 text-primary" />
+        <ProfileIcon class="size-10 text-primary opacity-65" />
         <h1 class="text-3xl text-primary font-bold">Sobre Mí</h1>
+    </div>
+    <div class="flex flex-row mt-10 gap-16">
+        <Image
+            src={ProfilePicture}
+            alt="Foto de Perfil Jhossua"
+            class="size-52 rounded hover:-rotate-3 transition-transform duration-500 shadow-2xl opacity-60"
+        />
+        <p class="w-[70%] text-xl leading-[1.6]">
+            Mi nombre es Jhossua Roa Rodriguez, vivo en Santo Domingo, Republica
+            Dominicana, soy egresado de la universidad ITLA (Instituto
+            Tecnologico de Santo Domingo) en la carrera de desarrollador de
+            Software.
+        </p>
     </div>
 </section>

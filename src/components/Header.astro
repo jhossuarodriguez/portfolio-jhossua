@@ -2,30 +2,29 @@
 import DarkMode from "../assets/icons/sun.svg";
 ---
 
-<header class="fixed top-0 flex justify-center py-5 w-full mx-auto">
+<header class="fixed top-0 flex justify-center py-5 w-full mx-auto z-[99999px]">
     <nav
-        class="flex justify-center items-center py-2 px-10 border border-secondary h-full rounded-full bg-[#334054]"
+        class="flex justify-center items-center py-2 px-10 border border-secondary h-full rounded-full bg-[#334054] z-50"
     >
         <ul class="flex justify-center gap-x-5 items-center">
             <li>
                 <a
-                    class="hover:text-blue-400 transform duration-200"
-                    href="#projects"
-                    id="projects">Projects</a
+                    class="hover:text-secondary transform duration-200"
+                    href="#projects">Projects</a
                 >
             </li>
             <li>
                 <a
-                    class="hover:text-blue-400 transform duration-200"
+                    class="hover:text-secondary transform duration-200"
                     href="#about"
                     id="about">About</a
                 >
             </li>
             <li>
                 <a
-                    class="hover:text-blue-400 transform duration-200"
-                    href="#contact"
-                    id="contacto">Contacto</a
+                    class="hover:text-secondary transform duration-200"
+                    href="mailto:jhossuarodriguezz@gmail.com"
+                    aria-label="contacto">Contacto</a
                 >
             </li>
             <li>
@@ -35,7 +34,7 @@ import DarkMode from "../assets/icons/sun.svg";
                     id="theme-toggle-btn"
                 >
                     <DarkMode
-                        class="flex justify-center items-center size-5 hover:text-blue-400 transform duration-100"
+                        class="flex justify-center items-center size-5 hover:text-secondary transform duration-200"
                     />
                 </button>
             </li>

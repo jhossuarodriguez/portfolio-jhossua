@@ -1,13 +1,13 @@
 ---
 import { Image } from "astro:assets";
-import ProfilePicture from "../assets/images/profile-picture.webp";
+import GitHubProfile from "../assets/images/github-profile.webp";
 ---
 
-<section class="flex flex-col items-center w-full max-h-screen mt-44 py-10">
+<section class="flex flex-col items-center w-full max-h-screen mt-40 py-10">
     <div class="flex flex-row gap-x-5 w-full items-center">
         <Image
             class="rounded-full size-20 opacity-60"
-            src={ProfilePicture}
+            src={GitHubProfile}
             alt="Foto de Perfil 2X2 Jhossua Roa Rodriguez"
             fetchpriority={"high"}
             loading={"eager"}
@@ -16,7 +16,7 @@ import ProfilePicture from "../assets/images/profile-picture.webp";
             <a
                 href="https://www.linkedin.com/in/jhossuarodriguez/"
                 rel="nooperer noreferrer"
-                class="border border-secondary py-2 px-2 rounded-full"
+                class="border border-secondary py-2 px-2 rounded-full hover:border-secondary hover:bg-secondary hover:text-white transform duration-200"
                 >Disponible para Trabajar</a
             >
         </div>
@@ -25,7 +25,7 @@ import ProfilePicture from "../assets/images/profile-picture.webp";
         <h1 class="text-2xl">
             Hey, me llamo <span class="text-3xl font-bold">Jhossua</span>
         </h1>
-        <p class="w-[70%] mt-5 text-xl">
+        <p class="w-[70%] mt-5 text-xl leading-[1.6]">
             Desarrollador junior con una pasión por la creación de experiencias
             web excepcionales. En este portafolio podrás conocer más sobre mis
             proyectos y las tecnologías que utilizo
