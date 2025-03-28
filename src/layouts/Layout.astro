@@ -38,6 +38,9 @@ import ArrowUp from "../assets/icons/arrowUp.svg";
 	</body>
 
 	<style>
+		:root {
+			color-scheme: light dark;
+		}
 		html,
 		body {
 			scroll-behavior: smooth;
@@ -47,6 +50,11 @@ import ArrowUp from "../assets/icons/arrowUp.svg";
 			height: 100%;
 			color: #f4f4fdb7;
 			font-family: "Poppins", sans-serif;
+		}
+		@media (prefers-reduced-motion: reduce) {
+			html {
+				scroll-behavior: auto;
+			}
 		}
 	</style>
 </html>
