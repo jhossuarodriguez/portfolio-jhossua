@@ -1,5 +1,5 @@
 
-<img width="350" alt="MaxLogo" src="https://github.com/user-attachments/assets/1e466f3c-9235-469a-8a49-3b78833b4939" />
+<img width="250" alt="MaxLogo" src="https://github.com/user-attachments/assets/1e466f3c-9235-469a-8a49-3b78833b4939" />
 
 # Jhossua Roa Rodriguez - Portafolio
 
