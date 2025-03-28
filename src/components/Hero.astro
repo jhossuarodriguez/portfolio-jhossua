@@ -1,9 +1,12 @@
 ---
 import { Image } from "astro:assets";
 import GitHubProfile from "../assets/images/github-profile.webp";
+import LinkedIn from "../assets/icons/linkedin.svg";
+import FigmaLogo from "../assets/icons/figma.svg";
+import ContactIcon from "../assets/icons/contact.svg";
 ---
 
-<section class="flex flex-col items-center w-full max-h-screen mt-40 py-10">
+<section class="flex flex-col items-center w-full max-h-screen mt-28 py-10">
     <div class="flex flex-row gap-x-5 w-full items-center">
         <Image
             class="rounded-full size-20 opacity-60"
@@ -28,7 +31,30 @@ import GitHubProfile from "../assets/images/github-profile.webp";
         <p class="w-[70%] mt-5 text-xl leading-[1.6]">
             Desarrollador junior con una pasión por la creación de experiencias
             web excepcionales. En este portafolio podrás conocer más sobre mis
-            proyectos y las tecnologías que utilizo
+            proyectos y las tecnologías que utilizo.
         </p>
+        <div class="flex flex-row gap-3 mt-10">
+            <a
+                class="py-2 px-2 flex flex-row justify-center items-center gap-1 border border-primary rounded-xl hover:text-primary hover:bg-secondary transition duration-300"
+                href="https://github.com/jhossuarodriguez/lorar-website"
+                rel="nooperer noreferer"
+            >
+                LinkedIn<LinkedIn class="size-6 text-primary" />
+            </a>
+            <a
+                class="py-2 px-2 flex flex-row justify-center items-center gap-1 border border-primary rounded-xl hover:text-primary hover:bg-secondary transition duration-300"
+                href="https://github.com/jhossuarodriguez/lorar-website"
+                rel="nooperer noreferer"
+            >
+                Figma<FigmaLogo class="size-6 text-primary" />
+            </a>
+            <a
+                class="py-2 px-2 flex flex-row justify-center items-center gap-1 border border-primary rounded-xl hover:text-primary hover:bg-secondary transition duration-300"
+                href="mailto:jhossuarodriguezz@gmail.com"
+                rel="nooperer noreferer"
+            >
+                Contactame<ContactIcon class="size-6 text-primary" />
+            </a>
+        </div>
     </div>
 </section>
