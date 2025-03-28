@@ -1,3 +1,6 @@
+
+<img width="350" alt="MaxLogo" src="https://github.com/user-attachments/assets/1e466f3c-9235-469a-8a49-3b78833b4939" />
+
 # Jhossua Roa Rodriguez - Portafolio
 
 Bienvenido a mi portafolio. Soy un desarrollador junior con una pasión por la creación de experiencias web excepcionales. Aquí podrás conocer más sobre mis proyectos y las tecnologías que utilizo.
