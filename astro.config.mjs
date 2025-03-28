@@ -11,6 +11,7 @@ export default defineConfig({
   experimental: {
     svg: {
       mode: 'sprite'
-    }
+    },
+    responsiveImages: true,
   }
 });
