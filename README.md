@@ -1,48 +1,39 @@
-# Astro Starter Kit: Basics
+# Jhossua Roa Rodriguez - Portafolio
 
-```sh
-bun create astro@latest -- --template basics
-```
+Bienvenido a mi portafolio. Soy un desarrollador junior con una pasión por la creación de experiencias web excepcionales. Aquí podrás conocer más sobre mis proyectos y las tecnologías que utilizo.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 📌 Sobre Mí
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- 🎓 Estudiante del Instituto Tecnológico de Santo Domingo (ITLA) en la carrera de Desarrollo de Software.
+- 🌎 Vivo en Santo Domingo, República Dominicana.
+- 💼 Disponible para trabajar.
+- 📌 Diseño inspirado en Midudev.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🚀 Tecnologías
 
-## 🚀 Project Structure
+- Astro
+- Tailwind CSS
+- JavaScript
+- Figma
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📂 Proyectos
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### 🔹 [Lorar Studio](#)
+Sitio web de arquitectura desarrollado con Astro, Tailwind CSS y JavaScript, diseñado para ofrecer una experiencia rápida, optimizada y visualmente atractiva.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+🔗 [GitHub](#) | 🎨 [Figma](#)
 
-## 🧞 Commands
+### 🔹 [Tenax Construction](#)
+Página web para una constructora dominicana, creada con Astro, Tailwind CSS y JavaScript para brindar un diseño moderno y optimizado.
 
-All commands are run from the root of the project, from a terminal:
+🔗 [GitHub](#) | 🎨 [Figma](#)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+## 📞 Contacto
 
-## 👀 Want to learn more?
+- 📩 [LinkedIn](#)
+- 🎨 [Figma](#)
+- 📧 [Contáctame](#)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+© 2025 - Todos los derechos reservados. Desarrollado por Jhossua Roa Rodriguez.
+
