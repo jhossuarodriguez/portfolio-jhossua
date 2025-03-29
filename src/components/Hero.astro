@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import GitHubProfile from "../assets/images/github-profile.webp";
 import LinkedIn from "../assets/icons/linkedin.svg";
 import GitHub from "../assets/icons/github.svg";
-import ContactIcon from "../assets/icons/contact.svg";
+import DocumentIcon from "../assets/icons/documentIcon.svg";
 ---
 
 <section class="flex flex-col items-center w-full max-h-screen mt-28 py-10 jus">
@@ -38,28 +38,38 @@ import ContactIcon from "../assets/icons/contact.svg";
             class="flex flex-wrap flex-1/2 md:flex-row gap-3 mt-10 min-w-[250px] md-w-full"
         >
             <a
-                class="py-2 px-4 md:py-2 md:px-2 text-xs md:text-base flex flex-row justify-center items-center gap-1 border border-primary rounded-xl hover:text-primary hover:bg-secondary transition duration-300"
+                class="w-24 py-2 px-4 md:py-2 md:px-2 text-xs md:text-base flex flex-row justify-center items-center gap-1 border border-primary rounded-xl hover:text-primary hover:bg-secondary transition duration-300"
                 href="https://github.com/jhossuarodriguez/lorar-website"
                 rel="nooperer noreferer"
                 target="_blank"
             >
-                LinkedIn<LinkedIn class="size-4 md:size-6 text-primary" />
+                Github<GitHub class="size-4 md:size-6" />
             </a>
             <a
                 class="py-2 px-4 md:py-2 md:px-2 text-xs md:text-base flex flex-row justify-center items-center gap-1 border border-primary rounded-xl hover:text-primary hover:bg-secondary transition duration-300"
-                href="https://github.com/jhossuarodriguez?tab=repositories"
+                href="https://www.linkedin.com/in/jhossuarodriguez/"
                 rel="nooperer noreferer"
                 target="_blank"
             >
-                GitHub<GitHub class="size-4 md:size-6 text-primary" />
+                LinkedIn<LinkedIn class="size-4 md:size-6" />
             </a>
-            <a
-                class="py-2 px-4 md:py-2 md:px-2 text-xs md:text-base flex flex-row justify-center items-center gap-1 border border-primary rounded-xl hover:text-primary hover:bg-secondary transition duration-300"
-                href="mailto:jhossuarodriguezz@gmail.com"
-                rel="nooperer noreferer"
+            <button
+                class="py-2 px-4 md:py-2 md:px-2 text-xs md:text-base flex flex-row justify-center items-center gap-1 border border-primary rounded-xl hover:text-primary hover:bg-secondary transition duration-300 w-24 cursor-pointer"
+                id="downloadCV"
             >
-                Contactame<ContactIcon class="size-4 md:size-6 text-primary" />
-            </a>
+                CV<DocumentIcon class="size-4 md:size-6" />
+            </button>
         </div>
     </div>
 </section>
+
+<script>
+    document.getElementById("downloadCV")?.addEventListener("click", () => {
+        const link = document.createElement("a");
+        link.href = "/assets/cv/JHOSSUA ROA CV ES - NV.pdf";
+        link.download = "JHOSSUA ROA CV ES - NV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+</script>
