@@ -66,8 +66,8 @@ import DocumentIcon from "../assets/icons/documentIcon.svg";
 <script>
     document.getElementById("downloadCV")?.addEventListener("click", () => {
         const link = document.createElement("a");
-        link.href = "/assets/cv/JHOSSUA ROA CV ES - NV.pdf";
-        link.download = "JHOSSUA ROA CV ES - NV.pdf";
+        link.href = "./public/CV_Jhossua_Roa_Rodriguez.pdf";
+        link.download = "JHOSSUA ROA CV ES.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
