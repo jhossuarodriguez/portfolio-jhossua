@@ -10,7 +10,7 @@ import FigmaLogo from "../assets/icons/figma.svg";
 ---
 
 <section
-    class="flex flex-col w-full mt-10 md:mt-44 py-5 min-h-full"
+    class="flex flex-col w-full mt-10 md:mt-20 py-5 min-h-full"
     id="projects"
 >
     <div class="flex flex-row gap-3">
@@ -19,7 +19,7 @@ import FigmaLogo from "../assets/icons/figma.svg";
     </div>
 
     <!--First Project -->
-    <div class="flex flex-col md:flex-row gap-10 mt-5 md:mt-10 items-center">
+    <div class="flex flex-col md:flex-row gap-20 mt-10 items-center">
         <Image
             class="w-[350px] md:w-[450px] h-full object-contain rounded-lg shadow-2xl hover:scale-110 transition-transform duration-700"
             src={Project1}
@@ -29,7 +29,7 @@ import FigmaLogo from "../assets/icons/figma.svg";
         />
 
         <div class="flex flex-col w-full md:w-auto">
-            <h2 class="text-2xl md:text-3xl font-bold">
+            <h2 class="text-2xl font-bold">
                 Lorar Studio - Pagina Arquitectura
             </h2>
             <div class="flex flex-row mt-5 gap-3">
@@ -82,7 +82,7 @@ import FigmaLogo from "../assets/icons/figma.svg";
     </div>
 
     <!--Second Project -->
-    <div class="flex flex-col md:flex-row gap-20 mt-10 items-center">
+    <div class="flex flex-col md:flex-row gap-20 mt-20 items-center">
         <Image
             class="w-[350px] md:w-[450px] h-full object-contain rounded-lg shadow-2xl hover:scale-110 transition-transform duration-700"
             src={Project2}
@@ -92,35 +92,36 @@ import FigmaLogo from "../assets/icons/figma.svg";
         />
 
         <div class="flex flex-col">
-            <h2 class="text-2xl md:text-3xl font-bold">
+            <h2 class="text-2xl font-bold">
                 Tenax Construction - Constructora Dominicana
             </h2>
             <div class="flex flex-row mt-5 gap-3">
                 <a
                     href="https://astro.build/"
                     rel="noopener noreferrer"
+                    target="_blank"
                     class="flex flex-row justify-center items-center text-primary rounded-full border border-primary px-5 gap-3 bg-gradient-to-tr from-[#1321AC] to-[#881ABD] text-sm hover:scale-105 transition-transform duration-500"
                     ><AstroLogo class="size-4" /> Astro</a
                 >
                 <a
                     href="https://tailwindcss.com/"
                     rel="noopener noreferrer"
+                    target="_blank"
                     class="flex flex-row justify-center items-center text-primary rounded-full border border-primary px-3 gap-3 text-sm hover:scale-105 transition-transform duration-500 bg-[#00315]"
                     ><TailwindLogo class="size-4" /> Tailwind CSS</a
                 >
             </div>
             <div class="flex flex-col mt-7">
                 <p class="text-primary text-base leading-[1.6]">
-                    Lorar Studio es un sitio web de arquitectura desarrollado
-                    con Astro, Tailwind CSS y JavaScript, diseñado para ofrecer
-                    una experiencia rápida, optimizada y visualmente atractiva a
-                    sus clientes para brindar el mejor servicio.
+                    Constructora dominicana dedicada al diseño, construcción,
+                    administración y dirección de obras civiles.
                 </p>
             </div>
             <div class="flex flex-row mt-5 gap-5">
                 <a
                     class="py-2 px-2 flex flex-row justify-center items-center gap-1 border border-primary rounded-xl hover:text-primary hover:bg-secondary transition duration-300"
                     href="https://github.com/jhossuarodriguez/tenax-website"
+                    target="_blank"
                     rel="nooperer noreferer"
                 >
                     GitHub<GitHub class="size-6 text-primary" />
@@ -128,6 +129,7 @@ import FigmaLogo from "../assets/icons/figma.svg";
                 <a
                     class="py-2 px-2 flex flex-row justify-center items-center gap-2 border border-primary rounded-xl hover:text-primary hover:bg-secondary transition duration-300"
                     rel="nooperer noreferer"
+                    target="_blank"
                     href="https://www.figma.com/proto/UP7UvUiGncYdC0CAxvaTi0/Tenax-Construction?node-id=0-1&t=M1pC73gxaM8Mhj7d-1"
                 >
                     Figma<FigmaLogo class="size-6" />
