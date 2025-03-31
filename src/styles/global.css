@@ -4,3 +4,9 @@
     --color-primary: #F4F4FDB7;
     --color-secondary: #1E2A47;
 }
+
+@media (prefers-color-scheme: light) {
+    div > a {
+        border: 1px solid black;
+    }
+}
