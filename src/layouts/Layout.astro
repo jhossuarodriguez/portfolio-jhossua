@@ -34,11 +34,12 @@ import ArrowUp from "../assets/icons/arrowUp.svg";
 			<slot />
 			<Footer />
 		</div>
-		<div class="fixed bottom-12 right-12">
+
+		<section class="fixed bottom-12 right-12">
 			<a href="#home" aria-labelledby="Up" aria-label="Subir">
 				<ArrowUp class="size-12" />
 			</a>
-		</div>
+		</section>
 	</body>
 </html>
 
@@ -54,11 +55,13 @@ import ArrowUp from "../assets/icons/arrowUp.svg";
 		height: 100%;
 		font-family: "Poppins", sans-serif;
 	}
+
 	@media (prefers-reduced-motion: reduce) {
 		html {
 			scroll-behavior: auto;
 		}
 	}
+
 	@media (prefers-color-scheme: dark) {
 		html {
 			background: linear-gradient(to right, #475569, #1e2a47);
