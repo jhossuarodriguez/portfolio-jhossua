@@ -9,19 +9,19 @@ import DarkMode from "../assets/icons/sun.svg";
         <ul class="flex justify-center gap-x-5 items-center">
             <li>
                 <a
-                    class="hover:text-secondary transform duration-200"
+                    class="hover:text-secondary transition duration-200"
                     href="#projects">Projects</a
                 >
             </li>
             <li>
                 <a
-                    class="hover:text-secondary transform duration-200"
+                    class="hover:text-secondary transition duration-200"
                     href="#about">About</a
                 >
             </li>
             <li>
                 <a
-                    class="hover:text-secondary transform duration-200"
+                    class="hover:text-secondary transition duration-200"
                     href="mailto:jhossuarodriguezz@gmail.com"
                     aria-label="contacto">Contacto</a
                 >
@@ -31,9 +31,11 @@ import DarkMode from "../assets/icons/sun.svg";
                     type="button"
                     class="flex justify-center items-center cursor-pointer"
                     id="theme-toggle-btn"
+                    aria-label="Modo Oscuro"
+                    title="Mostrar Modo Oscuro"
                 >
                     <DarkMode
-                        class="flex justify-center items-center size-5 hover:text-secondary transform duration-200"
+                        class="flex justify-center items-center size-5 hover:text-secondary transition duration-200"
                     />
                 </button>
             </li>
