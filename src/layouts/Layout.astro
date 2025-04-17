@@ -35,7 +35,7 @@ import ArrowUp from "../assets/icons/arrowUp.svg";
 			<Footer />
 		</div>
 
-		<section class="fixed bottom-12 right-12">
+		<section class="fixed bottom-12 right-12" id="scroll-to-top">
 			<a href="#home" aria-labelledby="Up" aria-label="Subir">
 				<ArrowUp class="size-12" />
 			</a>
@@ -72,6 +72,29 @@ import ArrowUp from "../assets/icons/arrowUp.svg";
 		html {
 			background: linear-gradient(to right, #f8fafc, #9ca3af);
 			color: #1f2937c9;
+		}
+	}
+
+	#scroll-to-top {
+		animation: scroll-to-top 0.3s both;
+		animation-timeline: scroll();
+		animation-range: 0 500px;
+	}
+
+	@keyframes scroll-to-top {
+		0% {
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		20% {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+
+		100% {
+			opacity: 1;
+			pointer-events: auto;
 		}
 	}
 </style>
