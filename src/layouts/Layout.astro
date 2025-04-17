@@ -100,7 +100,7 @@ import ArrowUp from "../assets/icons/arrowUp.svg";
 	}
 </style>
 <script>
-	if (CSS.supports("animation-timeline: scroll()")) {
+	if (!CSS.supports("animation-timeline: scroll()")) {
 		const scrollBtn = document.getElementById("scroll-to-top");
 		scrollBtn?.addEventListener("scroll", () => {
 			if (window.scrollY > 300) {
