@@ -99,20 +99,3 @@ import ArrowUp from "../assets/icons/arrowUp.svg";
 		}
 	}
 </style>
-<script>
-	if (!CSS.supports("animation-timeline: scroll()")) {
-		const scrollBtn = document.getElementById("scroll-to-top");
-		scrollBtn?.addEventListener("scroll", () => {
-			if (window.scrollY > 300) {
-				scrollBtn.classList.remove("opacity-0", "pointer-events-none");
-				scrollBtn.classList.add("opacity-100", "pointer-events-auto");
-			} else {
-				scrollBtn.classList.add("opacity-0", "pointer-events-none");
-				scrollBtn.classList.remove(
-					"opacity-100",
-					"pointer-events-auto",
-				);
-			}
-		});
-	}
-</script>
