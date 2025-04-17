@@ -80,21 +80,39 @@ import ArrowUp from "../assets/icons/arrowUp.svg";
 		animation-timeline: scroll();
 		animation-range: 0 500px;
 	}
+	@supports (animation-timeline: scroll()) {
+		@keyframes scroll-to-top {
+			0% {
+				opacity: 0;
+				pointer-events: none;
+			}
 
-	@keyframes scroll-to-top {
-		0% {
-			opacity: 0;
-			pointer-events: none;
-		}
+			20% {
+				opacity: 0.5;
+				pointer-events: none;
+			}
 
-		20% {
-			opacity: 0.5;
-			pointer-events: none;
-		}
-
-		100% {
-			opacity: 1;
-			pointer-events: auto;
+			100% {
+				opacity: 1;
+				pointer-events: auto;
+			}
 		}
 	}
 </style>
+<script>
+	if (CSS.supports("animation-timeline: scroll()")) {
+		const scrollBtn = document.getElementById("scroll-to-top");
+		scrollBtn?.addEventListener("scroll", () => {
+			if (window.scrollY < 300) {
+				scrollBtn.classList.remove("opacity-0", "pointer-events-none");
+				scrollBtn.classList.add("opacity-100", "pointer-events-auto");
+			} else {
+				scrollBtn.classList.add("opacity-0", "pointer-events-none");
+				scrollBtn.classList.remove(
+					"opacity-100",
+					"pointer-events-auto",
+				);
+			}
+		});
+	}
+</script>
