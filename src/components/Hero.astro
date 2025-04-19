@@ -4,16 +4,28 @@ import GitHubProfile from "../assets/images/github-profile.webp";
 import LinkedIn from "../assets/icons/linkedin.svg";
 import GitHub from "../assets/icons/github.svg";
 import DocumentIcon from "../assets/icons/documentIcon.svg";
+import AnimatedPic from "../assets/images/pic-removebg.webp";
 ---
 
-<section class="flex flex-col items-center w-full max-h-screen mt-28 py-10 jus">
-    <div class="flex flex-row gap-x-5 w-full items-center">
+<section
+    class="flex flex-col items-center w-full max-h-screen mt-28 py-10 justify-center"
+>
+    <div class="flex flex-row gap-x-5 w-full items-center relative">
         <Image
-            class="rounded-full size-20 opacity-60"
+            class="rounded-full size-20 opacity-80"
             src={GitHubProfile}
-            alt="Foto de Perfil 2X2 Jhossua Roa Rodriguez"
+            alt="Foto de Perfil Github"
             fetchpriority={"high"}
             loading={"eager"}
+        />
+
+        <Image
+            class="rounded-full size-20 opacity-10 absolute -z-10"
+            src={AnimatedPic}
+            alt="Foto de animated Jhossua Roa Rodriguez"
+            fetchpriority={"high"}
+            loading={"eager"}
+            id={"animated-pic"}
         />
         <div class="md:w-full min-w-[250px]">
             <a
@@ -30,8 +42,8 @@ import DocumentIcon from "../assets/icons/documentIcon.svg";
             Hey, soy <span class="text-3xl font-bold">Jhossua</span>
         </h1>
         <p class="w-full md:w-[70%] mt-5 text-base md:text-xl leading-[1.6]">
-            Desarrollador junior con una pasión por la creación de experiencias
-            web excepcionales. En este portafolio podrás conocer más sobre mis
+            Desarrollador con pasión por la creación de experiencias web
+            excepcionales. En este portafolio podrás conocer más sobre mis
             proyectos y las tecnologías que utilizo.
         </p>
         <div
@@ -65,3 +77,28 @@ import DocumentIcon from "../assets/icons/documentIcon.svg";
         </div>
     </div>
 </section>
+
+<style>
+    #animated-pic {
+        animation: imageMove 10s infinite;
+    }
+
+    @keyframes imageMove {
+        0% {
+            transform: translateY(0px);
+            opacity: 0;
+        }
+        10% {
+            transform: translateY(-100px);
+            opacity: 1;
+        }
+        20% {
+            transform: translateY(0px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 0;
+        }
+    }
+</style>
