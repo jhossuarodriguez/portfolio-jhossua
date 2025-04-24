@@ -1,5 +1,8 @@
 ---
-import DarkMode from "../assets/icons/sun.svg";
+import LightMode from "../assets/icons/sun.svg";
+import DarkMode from "../assets/icons/moon.svg";
+
+const THEME = ["light", "dark"];
 ---
 
 <header class="fixed top-0 flex justify-center py-5 w-full mx-auto z-[99999px]">
@@ -29,13 +32,18 @@ import DarkMode from "../assets/icons/sun.svg";
             <li>
                 <button
                     type="button"
-                    class="flex justify-center items-center cursor-pointer"
+                    class="flex justify-center appearance-none border-none items-center cursor-pointer hover:scale-110 transition"
                     id="theme-toggle-btn"
                     aria-label="Modo Oscuro"
                     title="Mostrar Modo Oscuro"
                 >
+                    <LightMode
+                        class="size-5 transition-all duration-200"
+                        id="light"
+                    />
                     <DarkMode
-                        class="flex justify-center items-center size-5 hover:text-secondary transition duration-200"
+                        class="size-5 transition-all duration-200"
+                        id="dark"
                     />
                 </button>
             </li>
@@ -63,3 +71,39 @@ import DarkMode from "../assets/icons/sun.svg";
         }
     }
 </style>
+<script is:inline>
+    const themeToggleBtn = document.getElementById("theme-toggle-btn");
+    const lightIcon = document.getElementById("light");
+    const darkIcon = document.getElementById("dark");
+
+    // Configuración de temas
+    const THEMES = ["light", "dark"];
+
+    // Función para actualizar los iconos según el tema
+    const updateIcons = (theme) => {
+        const isLight = theme === "light";
+        lightIcon.style.display = isLight ? "block" : "none";
+        darkIcon.style.display = isLight ? "none" : "block";
+    };
+
+    // Función para aplicar el tema
+    const applyTheme = (theme) => {
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+        updateIcons(theme);
+    };
+
+    // Inicialización del tema
+    const savedTheme = localStorage.getItem("theme");
+    const initialTheme = THEMES.includes(savedTheme) ? savedTheme : "light";
+    let currentThemeIndex = THEMES.indexOf(initialTheme);
+
+    // Aplicar el tema inicial
+    applyTheme(initialTheme);
+
+    // Manejador del evento clic para cambiar el tema
+    themeToggleBtn.addEventListener("click", () => {
+        currentThemeIndex = (currentThemeIndex + 1) % THEMES.length;
+        applyTheme(THEMES[currentThemeIndex]);
+    });
+</script>
