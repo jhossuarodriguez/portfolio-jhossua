@@ -79,6 +79,15 @@ const THEME = ["light", "dark"];
     // Configuración de temas
     const THEMES = ["light", "dark"];
 
+    const getPreference = () => {
+        if (typeof localStorage !== "undefined") {
+            return localStorage.getItem("theme") ?? "system";
+        }
+        return window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+    };
+
     // Función para actualizar los iconos según el tema
     const updateIcons = (theme) => {
         const isLight = theme === "light";
