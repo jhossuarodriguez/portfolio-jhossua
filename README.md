@@ -2,7 +2,7 @@
 # Jhossua Roa Rodriguez - Portafolio Dev
 
 <div align="center">
-    <a href="https://portfolio-jhossua.vercel.app" target="_blank">
+    <a href="https://portfolio-jhossua.vercel.app">
         <img src="./public/portfolio-preview.webp">
     </a>
 </div>
