@@ -52,6 +52,7 @@ import ArrowUp from "../assets/icons/arrowUp.svg";
 	:root {
 		color-scheme: light dark;
 	}
+
 	html,
 	body {
 		scroll-behavior: smooth;
@@ -67,16 +68,15 @@ import ArrowUp from "../assets/icons/arrowUp.svg";
 		}
 	}
 
+	html {
+		background: linear-gradient(to right, #f8fafc, #9ca3af);
+		color: #1f2937c9;
+	}
+
 	@media (prefers-color-scheme: dark) {
-		html {
+		html.dark {
 			background: linear-gradient(to right, #475569, #1e2a47);
 			color: #f4f4fdb7;
-		}
-	}
-	@media (prefers-color-scheme: light) {
-		html {
-			background: linear-gradient(to right, #f8fafc, #9ca3af);
-			color: #1f2937c9;
 		}
 	}
 
