@@ -70,15 +70,12 @@ import DarkMode from "../assets/icons/moon.svg";
     }
 </style>
 <script is:inline>
-    // Get the theme toggle button
     const themeToggleBtn = document.getElementById("theme-toggle-btn");
 
-    // Function to set the theme
     const setTheme = (theme) => {
         document.documentElement.classList.toggle("dark", theme === "dark");
         localStorage.setItem("theme", theme);
 
-        // Update button appearance based on theme
         document.querySelectorAll(".toggle-icon").forEach((icon) => {
             icon.style.display = "none";
         });
@@ -87,17 +84,14 @@ import DarkMode from "../assets/icons/moon.svg";
         ).style.display = "block";
     };
 
-    // Check for saved theme preference or use system preference
     const savedTheme =
         localStorage.getItem("theme") ||
         (window.matchMedia("(prefers-color-scheme: dark)").matches
             ? "dark"
             : "light");
 
-    // Set the initial theme
     setTheme(savedTheme);
 
-    // Toggle theme on button click
     themeToggleBtn.addEventListener("click", () => {
         const currentTheme = localStorage.getItem("theme") || "light";
         const newTheme = currentTheme === "light" ? "dark" : "light";
