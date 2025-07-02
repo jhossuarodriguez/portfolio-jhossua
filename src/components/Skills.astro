@@ -1,0 +1,76 @@
+---
+import DevIcon from "../assets/icons/dev.svg";
+import AstroSkill from "../assets/icons/astroSkill.svg";
+import TailwindSkill from "../assets/icons/tailwindSkill.svg";
+import JavascriptSkill from "../assets/icons/javascriptSkill.svg";
+import TypescriptSkill from "../assets/icons/typescriptSkill.svg";
+import ReactSkill from "../assets/icons/reactSkill.svg";
+---
+
+<section
+    class="flex flex-col w-full mt-10 md:mt-20 py-5 min-h-full"
+    id="skills"
+>
+    <div class="flex flex-row gap-3">
+        <DevIcon class="size-10" />
+        <h1 class="text-3xl font-bold">Tecnologias</h1>
+    </div>
+
+    <div class="flex justify-center items-center mt-32 gap-x-10 inset-0">
+        <a
+            href="https://astro.build/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Astro"
+            aria-label="Astro"
+        >
+            <AstroSkill
+                class="size-24 hover:-translate-y-3 transition-transform duration-300"
+            />
+        </a>
+        <a
+            href="https://tailwindcss.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Tailwind CSS"
+            aria-label="Tailwind CSS"
+        >
+            <TailwindSkill
+                class="size-24 hover:-translate-y-3 transition-transform duration-300"
+            />
+        </a>
+        <a
+            href="https://tc39.es/ecma262/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="JavaScript"
+            aria-label="JavaScript"
+        >
+            <JavascriptSkill
+                class="size-24 hover:-translate-y-3 transition-transform duration-300"
+            />
+        </a>
+        <a
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="TypeScript"
+            aria-label="TypeScript"
+        >
+            <TypescriptSkill
+                class="size-24 hover:-translate-y-3 transition-transform duration-300"
+            />
+        </a>
+        <a
+            href="https://react.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="React"
+            aria-label="React"
+        >
+            <ReactSkill
+                class="size-24 hover:-translate-y-3 transition-transform duration-300"
+            />
+        </a>
+    </div>
+</section>
