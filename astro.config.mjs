@@ -1,14 +1,9 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "astro/config";
 
-import tailwindcss from '@tailwindcss/vite';
-
-// https://astro.build/config
 export default defineConfig({
+  // site: "https://example.com", // set this to enable sitemap/RSS/canonical URLs
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
   },
-  experimental: {
-    responsiveImages: true,
-  }
-}); 
+});
