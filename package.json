@@ -15,5 +15,8 @@
     "astro": "7.1.6",
     "sharp": "^0.35.3",
     "tailwindcss": "^4.0.15"
+  },
+  "overrides": {
+    "svgo": "4.1.0"
   }
 }
